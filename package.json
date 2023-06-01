@@ -1,6 +1,6 @@
 {
   "name": "simple-alert-sdk",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "一个简单的报警服务前端 SDK ",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -10,10 +10,12 @@
   },
   "author": "sandsea",
   "license": "MIT",
+  "dependencies": {
+    "typescript": "^5.0.4"
+  },
   "peerDependencies": {
     "axios": "^1.4.0",
-    "error-stack-parser": "^2.1.4",
-    "typescript": "^5.0.4"
+    "error-stack-parser": "^2.1.4"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.0",
