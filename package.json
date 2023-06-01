@@ -10,7 +10,7 @@
   },
   "author": "sandsea",
   "license": "MIT",
-  "dependencies": {
+  "peerDependencies": {
     "axios": "^1.4.0",
     "error-stack-parser": "^2.1.4",
     "typescript": "^5.0.4"
