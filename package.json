@@ -1,10 +1,12 @@
 {
   "name": "simple-alert-sdk",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "一个简单的报警服务前端 SDK ",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c"
   },
   "author": "sandsea",
   "license": "MIT",
@@ -17,6 +19,7 @@
     "@rollup/plugin-commonjs": "^25.0.0",
     "@rollup/plugin-node-resolve": "^15.1.0",
     "@rollup/plugin-typescript": "^11.1.1",
+    "rollup": "^3.23.0",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-node-builtins": "^2.1.2",
     "rollup-plugin-node-externals": "^6.0.1",
