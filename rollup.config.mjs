@@ -1,7 +1,6 @@
 import commonjs from "@rollup/plugin-commonjs";
 import externals from "rollup-plugin-node-externals";
 import typescript from "@rollup/plugin-typescript";
-import resolve from "@rollup/plugin-node-resolve";
 export default {
   input: "src/index.ts",
   output: {
@@ -12,9 +11,6 @@ export default {
   plugins: [
     commonjs(),
     typescript({ declaration: true, declarationDir: "dist" }),
-    resolve({
-      moduleDirectories: ["node_modules"],
-    }),
+    externals()
   ],
-  external: ["axios", "error-stack-parser"],
 };
